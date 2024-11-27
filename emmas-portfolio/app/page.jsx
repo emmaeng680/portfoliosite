@@ -13,7 +13,7 @@ const Home = () => {
                         Hello I'm <br/> <span> Emmanuel Oppong</span>
                     </h1>
                     <p>
-                        I excel at crafting elegant 
+                        I excel at crafting elegant
                     </p>
                 </div>
                 {/* photo */}
