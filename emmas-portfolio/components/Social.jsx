@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {FaGithub, FaLinkedin, FaTwitter, FaInstagram} from "react-icons/fa";
+import { TbBrandLeetcode } from "react-icons/tb";
 
 const socials = [
     {
@@ -11,6 +12,10 @@ const socials = [
         path: 'https://www.linkedin.com/in/emmanuel-oppong-612bb41b6/'
     },
     {
+        icon: <TbBrandLeetcode />,
+        path: 'https://leetcode.com/u/emmaoppongswe/'
+    },
+    {
         icon: <FaTwitter/>,
         path: 'https://x.com/emma_oppong_a'
     },
@@ -18,6 +23,7 @@ const socials = [
         icon: <FaInstagram/>,
         path: 'https://www.instagram.com/emmanuel_oppong_a/'
     },
+
 ]
 
 const Social = ({containerStyles, iconStyles}) => {
