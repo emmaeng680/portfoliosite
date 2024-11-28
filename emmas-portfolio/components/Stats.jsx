@@ -1,6 +1,6 @@
 'use client'
 import CountUp  from "react-countup";
-import VisibilitySensor from 'react-visibility-sensor';
+
 
 const stats = [
     {
@@ -36,16 +36,16 @@ const Stats = () => {
       </VisibilitySensor>
                                     */
                                 }
-                                {({ countUpRef, start }) => (
-                                <VisibilitySensor onChange={start}>
+
+
                                 < CountUp
                                     start={0}
                                     separator="."
                                     decimal="."
                                     suffix="+"
-                                    end={item.num} duration={5} delay={2} className='text-4xl xl:text-6xl font-extrabold' />
-                                </VisibilitySensor>
-                                )}
+                                    end={item.num} duration={5} delay={0} className='text-4xl xl:text-6xl font-extrabold' />
+
+
                                 <p className={`${item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]" } leading-snug text-white/80`}>
                                     {item.text}
                                 </p>
