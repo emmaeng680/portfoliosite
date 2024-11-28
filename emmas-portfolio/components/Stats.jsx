@@ -1,5 +1,5 @@
 'use client'
-import CountUp  from "react-countup";
+import {useCountUp}  from "react-countup";
 
 
 const stats = [
@@ -29,21 +29,12 @@ const Stats = () => {
                     {stats.map((item, index) => {
                         return (
                             <div className='flex-1 flex gap-4 items-center justify-center xl:justify-start' key={index} >
-                                {
-                                    /*
-                                    <VisibilitySensor onChange={start}>
-        <span ref={countUpRef} />
-      </VisibilitySensor>
-                                    */
-                                }
-
-
-                                < CountUp
+                                < useCountUp
                                     start={0}
                                     separator="."
                                     decimal="."
                                     suffix="+"
-                                    end={item.num} duration={5} delay={0} className='text-4xl xl:text-6xl font-extrabold' />
+                                    end={item.num} duration={5} delay={2} className='text-4xl xl:text-6xl font-extrabold' />
 
 
                                 <p className={`${item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]" } leading-snug text-white/80`}>
